@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9LwpCcFycQQnURbLszofSGhkqFZPIM1Fh6KYs4Aj7yDTm4MbaC2jONSFpVx0N+kiPGM0USQtg1qIKm7JniJszA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ing_s\\Documents\\Cursos\\ASP.NET\\ASP.NET Core 6 Web API Fundamentals\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ing_s\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Ing_s\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Ing_s\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ing_s\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ing_s\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Ing_s\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
