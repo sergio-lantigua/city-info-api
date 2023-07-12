@@ -22,6 +22,8 @@ namespace CityInfo.API.Controllers
                 );
         }
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<CityDto> GetCity(int id)
         {
             //Find the city

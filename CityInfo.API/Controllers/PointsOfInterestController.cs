@@ -63,6 +63,7 @@ namespace CityInfo.API.Controllers
             return Ok(pointOfInterest);
         }
 
+        [HttpPost]
         public ActionResult<PointsOfInterestDto> CreatePointOfInterest(int cityId, PointOfInterestForCreationDto pointOfInterest)
         {
             var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
@@ -133,7 +134,7 @@ namespace CityInfo.API.Controllers
 
             patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
 
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) 
             {
                 return BadRequest(ModelState);
             }

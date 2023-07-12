@@ -1,5 +1,4 @@
 using CityInfo.API.Services;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.StaticFiles;
 using Serilog;
 
