@@ -1,5 +1,7 @@
+using CityInfo.API.DbContexts;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 namespace CityInfo.API
@@ -34,6 +36,8 @@ namespace CityInfo.API
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
             builder.Services.AddSingleton<CitiesDataStore>();
+            builder.Services.AddDbContext<CityInfoContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("CityInfoDatabase")));
 
 
             #if DEBUG
