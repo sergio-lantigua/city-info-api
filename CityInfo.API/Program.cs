@@ -38,6 +38,8 @@ namespace CityInfo.API
             builder.Services.AddSingleton<CitiesDataStore>();
             builder.Services.AddDbContext<CityInfoContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("CityInfoDatabase")));
+            builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
             #if DEBUG
