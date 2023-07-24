@@ -9,8 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers
 {
-    [Route("api/cities/{cityId}/pointsofinterest")]
+    [Route("api/v{version:apiVersion}/cities/{cityId}/pointsofinterest")]
     [Authorize(Policy = "MustBeFromAntwerp")]
+    [ApiVersion("2.0")]
     [ApiController]
     public class PointsOfInterestController : ControllerBase
     {
@@ -39,7 +40,7 @@ namespace CityInfo.API.Controllers
                 {
                     return Forbid();
                 }
-                
+
 
                 //throw new Exception("Exception sample.");
                 var cityExist = await _cityInfoRepository.CityExistAsync(cityId);
